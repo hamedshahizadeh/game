@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Game</title>
+    <link
+      href="http://fonts.cdnfonts.com/css/mukokuseki-kitchen"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/go-orange" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v[X.Y.Z]/dist/font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="score-board">
+      <span id="user-score">0</span>:<span id="comp-score">0</span>
+      <div id="compB" class="badget">Computer</div>
+      <div id="userB" class="badget">You</div>
+    </div>
+
+    <div class="result">
+      <div id="spin" class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <p></p>
+    </div>
+
+    <div class="choices">
+      <div>
+        <div class="choice" id="r">
+          <img src="images/rock.png" alt="" />
+        </div>
+        <div class="choice" id="p">
+          <img src="images/paper.png" alt="" />
+        </div>
+        <div class="choice" id="s">
+          <img src="images/scissors.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <p id="action-msg">!!! Choose your move</p>
+
+    <div class="loader"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
